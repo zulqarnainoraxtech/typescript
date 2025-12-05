@@ -71,21 +71,63 @@
 // }
 // printInfo("zulqarnain",23,["football","coding","running"])
 
-interface studentInfo {
-    name: string,
-    age:number
-}
+// interface studentInfo {
+//     name: string,
+//     age:number
+// }
 
-let student:studentInfo = {
-    name: "zulqarnain",
-    age: 23
-}
+// let student:studentInfo = {
+//     name: "zulqarnain",
+//     age: 23
+// }
 
 
 
-function  getstudentInfo(students:studentInfo){
-    console.log("STD", students)
+// function  getstudentInfo(students:studentInfo){
+//     console.log("STD", students)
         
-};
-getstudentInfo(student)
+// };
+// getstudentInfo(student)
     
+
+// classes in typeScript
+
+// interface Person {
+//     name: string,
+//     age: number
+// }
+
+// class Student implements Person {
+//     name: string;
+//     age: number;
+//     constructor(name:string, age:number){
+//         this.name = name;
+//         this.age = age
+//     }
+// }
+
+// const s1 = new Student("Zulqarnain",23);
+// const s2 = new Student("Farhan",23);
+// const s3 = new Student("Ali",23);
+// console.log(s1);
+// console.log(s2);
+// console.log(s3);
+
+// interface Animal {
+//     name: string,
+//     sound(): void
+// }
+
+// class Dog implements Animal {
+//     name:string;
+//     constructor(name:string){
+//         this.name = name;
+//     }
+//     sound(){
+//         console.log("wow wow wow");
+//     }
+// }
+
+// const dog1 = new Dog("wisky")
+// console.log(dog1);
+// dog1.sound()
