@@ -52,8 +52,22 @@
 
 
 //Default parameter 
-function getInfo(info:string = "Happy"){
-    console.log(info)
+// function getInfo(info:string = "Happy"){
+//     console.log(info)
+// }
+// getInfo("sad");//sad will print
+
+// arrow function 
+
+const printInfo = (name:string, age:number, hobies:string[]) => {
+    console.log("Name : ", name);
+    console.log("Age : ", age);
+    console.log("your hobbies are : ")
+    hobies.forEach(hobby => {
+        console.log(hobby)
+        
+    });
+
 }
-getInfo("sad");//sad will print
+printInfo("zulqarnain",23,["football","coding","running"])
 
