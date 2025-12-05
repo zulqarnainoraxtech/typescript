@@ -57,7 +57,7 @@
 // }
 // getInfo("sad");//sad will print
 
-// arrow function 
+//? arrow function 
 
 // const printInfo = (name:string, age:number, hobies:string[]) => {
 //     console.log("Name : ", name);
@@ -90,7 +90,7 @@
 // getstudentInfo(student)
     
 
-// classes in typeScript
+//? classes in typeScript
 
 // interface Person {
 //     name: string,
@@ -131,3 +131,52 @@
 // const dog1 = new Dog("wisky")
 // console.log(dog1);
 // dog1.sound()
+
+//? interface extending another interface 
+
+// interface Person {
+//     name: string
+// }
+
+// interface Employee extends Person {
+//     sallary: number
+// }
+
+// class Developer {
+//     name: string;
+//     sallary: number;
+
+//     constructor(name:string,sallary:number){
+//         this.name = name;
+//         this.sallary = sallary
+//     }
+// }
+
+// const d1 = new Developer("Zulqarnain",30000)
+// console.log(d1);
+
+
+//? class implementing multiple interfaces 
+
+// interface HasEmail {
+//     email: string
+// }
+
+
+// interface HasNumber {
+//     phone: number
+// }
+
+
+// class User implements HasEmail,HasNumber {
+//     email:string;
+//     phone:number;
+
+//     constructor(email:string,phone:number){
+//         this.email = email;
+//         this.phone = phone;
+//     }
+// }
+
+// const u1 = new User("abc@gmail.com",100233232);
+// console.log(u1);
