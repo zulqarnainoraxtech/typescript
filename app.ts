@@ -180,3 +180,102 @@
 
 // const u1 = new User("abc@gmail.com",100233232);
 // console.log(u1);
+
+
+//? Access Specifier in classes 
+// Public  
+// class Person {
+//     public name: string;
+
+//     constructor(name: string) {
+//         this.name = name;
+//     }
+// }
+
+// const p = new Person("Ali ");
+// console.log(p.name); 
+
+
+// Private
+// class Person {
+//     private salary: number;
+
+//     constructor(salary: number) {
+//         this.salary = salary;
+//     }
+//     getSalary(){
+//         console.log(this.salary)
+//     }
+// }
+
+// const p = new Person(5000);
+// p.getSalary()
+// console.log(p.salary); // salary is private so error
+
+
+
+    // class Person {
+    //     protected age: number;
+
+    //     constructor(age: number) {
+    //         this.age = age;
+    //     }
+    // }
+
+    // class Student extends Person {
+    //     showAge() {
+    //         console.log(this.age); // ✅ allowed
+    //     }
+    // }
+
+    // const s = new Student(22);
+    // console.log(s.age); // ❌ ERROR
+
+
+// access modifiers short systex 
+// class User {
+//     constructor(
+//         public name: string,
+//         private age: number
+//     ) {}
+// }
+
+// const u = new User("Ali", 22);
+// console.log(u.name);  // ✔️ public
+// console.log(u.age);   // ❌ private
+
+
+//? Protected in inheritance
+
+// class Person {
+//     protected city = "Lahore";
+// }
+
+// class Employee extends Person {
+//     showCity() {
+//         console.log(this.city); // ✔️ allowed (protected)
+//     }
+// }
+
+// const emp = new Employee();
+// console.log(emp.city); // ❌ ERROR
+
+
+
+// class BankAccount {
+//     private _balance = 0;
+
+//     get balance() {
+//         return this._balance;
+//     }
+
+//     set balance(amount: number) {
+//         if (amount < 0) throw new Error("Amount cannot be negative");
+//         this._balance = amount;
+//     }
+// }
+
+// const acc = new BankAccount();
+// acc.balance = 500;    // setter
+// console.log(acc.balance); // getter
+
