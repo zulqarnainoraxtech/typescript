@@ -279,3 +279,31 @@
 // acc.balance = 500;    // setter
 // console.log(acc.balance); // getter
 
+
+//? Generic 
+
+
+// without generic we do 
+// function identity(value: any) {
+//     return value;
+// }
+// console.log(identity(343))
+
+// with generic 
+
+// function identity<T>(value : T): T{
+//     return value
+// }
+
+// console.log(identity(343))
+// console.log(identity("Hello"))
+// console.log(identity(true))
+
+
+function logItems<T>(items: T[]) {
+    items.forEach(item => console.log(item));
+}
+
+logItems<string>(["Ali", "Ahmad"]);
+logItems<number>([1, 2, 3]);
+
