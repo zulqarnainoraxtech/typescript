@@ -300,10 +300,24 @@
 // console.log(identity(true))
 
 
-function logItems<T>(items: T[]) {
-    items.forEach(item => console.log(item));
-}
+// function logItems<T>(items: T[]) {
+//     items.forEach(item => console.log(item));
+// }
 
-logItems<string>(["Ali", "Ahmad"]);
-logItems<number>([1, 2, 3]);
+// logItems<string>(["Ali", "Ahmad"]);
+// logItems<number>([1, 2, 3]);
 
+// generic with API 
+// interface User {
+//     name: string;
+//     age: number;
+// }
+
+// const response: ApiResponse<User> = {
+//     status: 200,
+//     success: true,
+//     data: {
+//         name: "Zulqarnain",
+//         age: 23
+//     }
+// };
